@@ -1,10 +1,11 @@
 package JavaOOP;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Person p = new Person("08/29/1970", "Marty");
         System.out.println(p.speak());
         System.out.println(p.getYearsOld());
+        System.out.println(p.fire());
 
         Cat c = new Cat("02/02/2018", "Gypsy");
         System.out.println(c.speak());

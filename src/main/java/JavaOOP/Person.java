@@ -1,7 +1,7 @@
 package JavaOOP;
 
 public class Person extends Organism
-        implements Growable, Workable, Speakable {
+        implements Growable, Workable, Speakable, Fireable {
 
     //
     // Data Members
@@ -46,6 +46,8 @@ public class Person extends Organism
     // Public Methods
     //
 
+    // TODO...
+
     //
     // Overrides
     //
@@ -57,12 +59,12 @@ public class Person extends Organism
 
     @Override
     public void startJob() {
-        // TODO
+        // TODO...
     }
 
     @Override
     public void endJob() {
-        // TODO
+        // TODO...
     }
 
     @Override
@@ -74,5 +76,5 @@ public class Person extends Organism
     // Private Methods
     //
 
-
+    // TODO...
 }
