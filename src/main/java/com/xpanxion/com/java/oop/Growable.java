@@ -1,4 +1,4 @@
-package JavaOOP;
+package com.xpanxion.com.java.oop;
 
 public interface Growable {
 

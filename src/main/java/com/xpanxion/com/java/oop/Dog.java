@@ -1,7 +1,7 @@
-package JavaOOP;
+package com.xpanxion.com.java.oop;
 
-public class Cat extends Organism
-        implements Speakable, Growable {
+public class Dog extends Organism
+    implements Growable, Speakable {
 
     //
     // Data Members
@@ -14,11 +14,11 @@ public class Cat extends Organism
     // Constructors
     //
 
-    public Cat (String creationDate) {
+    public Dog (String creationDate) {
         this.creationDate = creationDate;
     }
 
-    public Cat (String creationDate, String name) {
+    public Dog (String creationDate, String name) {
         this.name = name;
         this.creationDate = creationDate;
     }
@@ -36,13 +36,13 @@ public class Cat extends Organism
     //
 
     @Override
-    public String speak() {
-        return String.format("Meow: I am a cat and my name is %s.", this.name);
+    public void grow(int growthInches) {
+        this.heightInches += growthInches;
     }
 
     @Override
-    public void grow(int growthInches) {
-        this.heightInches += growthInches;
+    public String speak() {
+        return String.format("Woof: I am a Dog and my name is: %s.", this.name);
     }
 
     //

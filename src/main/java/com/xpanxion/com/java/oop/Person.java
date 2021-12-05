@@ -1,7 +1,7 @@
-package JavaOOP;
+package com.xpanxion.com.java.oop;
 
-public class Person extends Organism
-        implements Growable, Workable, Speakable, Fireable {
+public final class Person extends Organism // Can only extend one class.
+        implements Growable, Workable, Speakable, Fireable { // Can implement multiple interfaces.
 
     //
     // Data Members

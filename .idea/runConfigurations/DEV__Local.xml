@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DEV: Local" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.xpanxion.com.java.oop.Main" />
+    <module name="java-oop" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
