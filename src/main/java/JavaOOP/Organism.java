@@ -9,15 +9,31 @@ import java.util.concurrent.TimeUnit;
 // An individual, animal, plant, or single-celled life form.
 public abstract class Organism {
 
+    //
+    // Data members
+    //
+
     protected String creationDate;
 
-    public long getYearsOld() throws ParseException {
+    //
+    // Constructors
+    //
+
+    public Organism() {
+
+    }
+
+    //
+    // Public Methods
+    //
+
+    public int getYearsOld() throws ParseException {
         var retval = 0L;
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
         Date firstDate = sdf.parse(creationDate);
         Date todaysDate = new Date();
         long diffInMS = Math.abs(todaysDate.getTime() - firstDate.getTime());
         retval = (TimeUnit.DAYS.convert(diffInMS, TimeUnit.MILLISECONDS))/365;
-        return retval;
+        return (int)retval;
     }
 }
