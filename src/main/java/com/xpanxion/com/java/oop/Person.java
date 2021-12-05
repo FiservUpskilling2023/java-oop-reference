@@ -72,6 +72,15 @@ public final class Person extends Organism // Can only extend one class.
         return String.format("I am a Person and my name is: %s.", this.name);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "ssn='" + ssn + '\'' +
+                ", name='" + name + '\'' +
+                ", heightInches=" + heightInches +
+                '}';
+    }
+
     //
     // Private Methods
     //
